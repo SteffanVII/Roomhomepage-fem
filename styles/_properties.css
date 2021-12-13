@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+:root
+{
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --DarkGray: hsl(0, 0%, 63%);
+    --VeryDarkGray: hsl(0, 0%, 27%);
+    --font: 'Spartan', sans-serif;
+    
+    font-size: 12px;
+}
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: var(--font);
+    overflow: hidden;
+}
+
+.attribution_container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 50px;
+    left: -200px;
+    width: 200px;
+    height: 48px;
+    padding: 0 10px;
+    background-color: whitesmoke;
+    border-radius: 0 0 5px 0;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.13);
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+}
+
+.attribution_container::before
+{
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 10px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 0 5px 5px 0;
+    background-color: whitesmoke;
+}
+
+.attribution_container.active
+{
+    left: 0;
+}
+
+.attribution a
+{
+    color: gray;
+}

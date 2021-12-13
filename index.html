@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Room homepage</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/media_queries.css">
+  <script src="script/nav_toggle.js" defer></script>
+  <script src="script/image_slider.js" defer></script>
+</head>
+<body>
+  <header>
+    <button class="nav_toggle"><img src="images/icon-hamburger.svg" alt=""></button>
+    <a href="#home"><img src="images/logo.svg" alt="room website logo"></a>
+    <nav>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#shop">Shop</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contanct</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="image_slider">
+        <div class="image" id="img3" style="background-image: url('images/desktop-image-hero-3.jpg')"></div>
+        <div class="image" id="img2" style="background-image: url('images/desktop-image-hero-2.jpg')"></div>
+        <div class="image" id="img1" style="background-image: url('images/desktop-image-hero-1.jpg')"></div>
+        <div class="arrow">
+          <button><img src="images/icon-angle-left.svg" alt="left_arrow"></button>
+          <button><img src="images/icon-angle-right.svg" alt="right_arrow"></button>
+        </div>
+      </div>
+      <div class="hero_text">
+        <div class="hero_textw">
+          <h1>Discover innovative<br>ways to decorate</h1>
+          <p>We provide unmatched quality, comfort, and style for property owners across the country. 
+            Our experts combine form and function in bringing your vision to life. Create a room in your 
+            own style with our collection and make your property a reflection of you and what you love.</p>
+            <a href="">Shop now <img src="images/icon-arrow.svg" alt="arrow"></a>
+          </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about_image"></div>
+      <div class="about_text">
+        <div class="about_textw">
+          <h2>About our furniture</h2>
+          <p>Our multifunctional collection blends design and function to suit your individual taste.
+            Make each room unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+            or anything in between. Product specialists are available to help you create your dream space.</p>
+        </div>
+      </div>
+      <div class="about_image"></div>
+    </section>
+  </main>
+  <footer></footer>
+  <div class="attribution_container">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/SteffanVII" target="_blank">@Steffan</a>.
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+header
+{
+    width: 58.33%;
+    height: 140px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 0 64px;
+    z-index: 2;
+}
+
+header nav
+{
+    margin-left: 40px;
+}
+
+header ul li
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 17px;
+}
+
+header ul li::before
+{
+    content: '';
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+    left: 17.5%;
+    opacity: 0;
+    background-color: white;
+    transition: 0.20s ease-in-out;
+}
+
+header ul li:hover::before
+{
+    bottom: -10px;
+    opacity: 1;
+}
+
+header a
+{
+    text-decoration: none;
+    text-transform: lowercase;
+    color: white;
+}
+
+.nav_toggle
+{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    padding-left: inherit;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
